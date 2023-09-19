@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom"
 
 const Navbar = () => {
+
+  console.log("Navbar component is re-rendering! :(");
   
   return (
     <div>
