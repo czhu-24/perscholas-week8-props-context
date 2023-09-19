@@ -3,7 +3,7 @@ const Cart = ({ products }) => {
 
   const cartProducts = products.filter((product) => product.inCart);
 
-  // same as (product) => if (product.inCart) {return true} else {return false}
+  // same as products.filter((product) => if (product.inCart) {return true} else {return false});
 
   return (
     <div>

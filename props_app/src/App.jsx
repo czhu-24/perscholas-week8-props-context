@@ -8,6 +8,8 @@ import { useState } from "react";
 
 function App() {
 
+  console.log("app.jsx is re-rendering");
+
   const [products, setProducts] =
     useState([
       { name: 'Laptop', price: 1000, inCart: false },
@@ -15,6 +17,8 @@ function App() {
       { name: 'Headphones', price: 100, inCart: false },
       { name: 'Keyboard', price: 50, inCart: false },
       { name: 'Mouse', price: 30, inCart: false }]);
+
+  
 
   return (
     <div>

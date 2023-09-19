@@ -6,9 +6,15 @@ const ProductsDisplay = ({ products, setProducts }) => {
     // 1. make a new products array (from the old state)
     const productsCopy = [...products];
     // 2. set inCart = true for the clicked product
-    productsCopy[id].inCart = true;
+    if(!productsCopy[id].inCart){
+      productsCopy[id].inCart = true;
+    }else{
+      return;
+    }
     // 3. set state to this new products array
     setProducts(productsCopy);
+
+  
   }
 
   return (

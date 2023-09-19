@@ -6,7 +6,7 @@ import Navbar from "./components/Navbar";
 import Cart from "./pages/Cart";
 
 function App() {
-
+  console.log("App.jsx is re-rendering! :(");
 
 
   return (
