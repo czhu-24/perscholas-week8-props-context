@@ -1,13 +1,14 @@
-
 import { Route, Routes } from "react-router-dom";
 import "./styles.css";
 import Products from "./pages/Products";
 import Navbar from "./components/Navbar";
 import Cart from "./pages/Cart";
+import { primaryContext } from './context/PrimaryContext'
+import { useContext } from "react";
+
 
 function App() {
   console.log("App.jsx is re-rendering! :(");
-
 
   return (
     <div>

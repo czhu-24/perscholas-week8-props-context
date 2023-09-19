@@ -6,12 +6,9 @@ const ProductsDisplay = ({ products, setProducts }) => {
     // 1. make a new products array (from the old state)
     const productsCopy = [...products];
     // 2. set inCart = true for the clicked product
-    if(!productsCopy[id].inCart){
-      productsCopy[id].inCart = true;
-    }else{
-      return;
-    }
+    productsCopy[id].inCart = true;
     // 3. set state to this new products array
+    // EVEN IF THE VALUES OF THE ARRAY OF OBJECTS ARE THE SAME (WHEN ALL PRODUCTS HAVE BEEN ADDED TO THE CART), THE ARRAY REFERENCE WILL ALWAYS CHANGE BECAUSE WE MADE A COPY & WE'RE SETTING IT TO THE COPY
     setProducts(productsCopy);
 
   
